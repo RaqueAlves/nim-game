@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Árvore DOM</title>
+</head>
+<body>
+    <h1>Árvore DOM da Página Nim</h1>
+    <pre>
+html
+├── head
+│   ├── meta (charset)
+│   ├── meta (viewport)
+│   ├── link (style.css)
+│   ├── link (favicon)
+│   └── title
+└── body
+    ├── header
+    │   └── nav
+    │       └── ul
+    │           ├── li > a (Sobre)
+    │           ├── li > a (Objetivos)
+    │           ├── li > a (Tecnologias)
+    │           ├── li > a (Recursos)
+    │           ├── li > a (Tabuleiro)
+    │           └── li > a (Árvore do Projeto)
+    ├── div.container
+    │   ├── aside
+    │   │   ├── h1 (Informações Relevantes)
+    │   │   ├── section#sobre
+    │   │   │   ├── h2
+    │   │   │   └── p
+    │   │   ├── section#objetivos
+    │   │   │   ├── h2
+    │   │   │   └── ul > li*
+    │   │   ├── section#tecnologias
+    │   │   │   ├── h2
+    │   │   │   └── ul > li*
+    │   │   ├── section#recursos
+    │   │   │   ├── h2
+    │   │   │   └── ul > li*
+    │   │   ├── section#integrantes
+    │   │   │   ├── h2
+    │   │   │   └── p
+    │   │   ├── a.externo (Curso SI UFSC)
+    │   │   └── a.externo (GitHub)
+    │   └── main
+    │       └── section#tabuleiro
+    │           ├── h2
+    │           └── div.jogo-placeholder
+    │               └── p
+    └── footer
+        └── address
+            ├── p (disciplina/objetivo)
+            ├── p (integrantes)
+            ├── p (email)
+            └── p > a* (links úteis)
+    </pre>
+</body>
+</html>
