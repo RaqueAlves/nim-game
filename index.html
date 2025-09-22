@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="assets/icon.png">
+    <script type="module" src="js/UIController.js" defer></script>
     <title>AA2 - Projeto Nim</title>
 </head>
 <body>
@@ -77,9 +78,37 @@
         <main>
             <section id="tabuleiro">
                 <h2>Tabuleiro do Jogo</h2>
+
                 <div class="jogo-placeholder">
-                    <!-- Aqui depois entra a lógica do tabuleiro Nim -->
-                    <p>O tabuleiro será exibido aqui.</p>
+                    <!-- Controles -->
+                    <div class="nim-controls">
+                        <label for="nim-mode">Modo: </label>
+                        <select id="nim-mode">
+                            <option value="2">2 jogadores (local)</option>
+                            <option value="1">1 jogador (vs CPU)</option>
+                        </select>
+
+                        <label for="nim-piles-input">Piles (vírgula): </label>
+                        <input id="nim-piles-input" type="text" value="3,4,5" style="width:100px">
+                        <button id="nim-set-piles" type="button">Iniciar</button>
+
+                        <button id="nim-reset" type="button">Reset</button>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="nim-status" id="nim-status">
+                        Bem-vindo ao Nim!
+                    </div>
+
+                    <!-- Tabuleiro -->
+                    <div class="nim-board" id="nim-board"></div>
+
+                    <!-- Instruções -->
+                    <div class="nim-instructions">
+                        Regra: em uma jogada, remova 1 ou mais peças de UMA única pilha.
+                        Para remover mais de uma: Selecione uma peça e todas à esquerda da peça selecionada serão removidas.
+                        Quem remover a última peça vence.
+                    </div>
                 </div>
             </section>
         </main>
