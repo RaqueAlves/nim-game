@@ -131,3 +131,103 @@ aside ul {
 aside p, aside li {
     font-size: 0.95rem;
 }
+/* ===== Estilos para o jogo Nim ===== */
+.nim-controls {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nim-controls select,
+.nim-controls input,
+.nim-controls button {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.nim-controls button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.nim-controls button:hover {
+    background-color: #45a049;
+}
+
+.nim-status {
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 6px;
+    background: #f4f4f4;
+    margin-top: 0.5rem;
+}
+
+.nim-board {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nim-pile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 80px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nim-pile-label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #4caf50;
+}
+
+.nim-tokens {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nim-token {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.nim-token:hover {
+    transform: scale(1.2);
+    color: #ff4646;
+}
+
+/* Quando o token está em pré-seleção (hover estendido) */
+.nim-token.preview {
+    color: #ff4646;
+    transform: scale(1.2);
+}
+
+.nim-instructions {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
